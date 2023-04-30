@@ -1,0 +1,192 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../assets/fundo.svg);
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+.holes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "image1 image2 image3 image4"
+    "image5 image6 image7 image8"
+    "image9 image10 image11 image12";
+
+  margin: 300px auto 150px;
+  position: relative;
+}
+
+.hole {
+  margin:0 54px;
+}
+
+.mole6, .mole1, .mole2, .mole3, .mole4, .mole5,
+.mole1-2, .mole2-2, .mole3-2, .mole4-2, .mole5-2,
+.mole1-3, .mole2-3, .mole3-3, .mole4-3, .mole5-3,
+.mole1-4, .mole2-4, .mole3-4, .mole4-4, .mole5-4 {
+  position:absolute;
+}
+
+.mole1, .mole2, .mole3, .mole4, .mole5,
+.mole1-2, .mole2-2, .mole3-2, .mole4-2, .mole5-2,
+.mole1-3, .mole2-3, .mole3-3, .mole4-3, .mole5-3,
+.mole1-4, .mole2-4, .mole3-4, .mole4-4, .mole5-4 {
+  opacity: 0;
+}
+
+@keyframes delayShow {
+  0% {
+    opacity: 0;
+  }
+
+ 50% {
+  opacity: 1;
+ }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.mole1 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 1s;
+}
+
+.mole2 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 1.25s;
+}
+
+.mole3 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 1.5s;
+}
+
+.mole4 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 1.75s;
+}
+
+.mole5 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 2s;
+}
+
+// SECOND ROUND
+
+.mole1-2 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 2.5s;
+}
+
+.mole2-2 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 2.75s;
+}
+
+.mole3-2 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 3s;
+}
+
+.mole4-2 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 3.25s;
+}
+
+.mole5-2 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 3.5s;
+}
+
+// THIRD ROUND
+
+.mole1-3 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 4s;
+}
+
+.mole2-3 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 4.25s;
+}
+
+.mole3-3 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 4.50s;
+}
+
+.mole4-3 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 4.75s;
+}
+
+.mole5-3 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 5s;
+}
+
+//FORTH ROUND
+
+.mole1-4 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 5.5s;
+}
+
+.mole2-4 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 5.75s;
+}
+
+.mole3-4 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 6s;
+}
+
+.mole4-4 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 6.25s;
+}
+
+.mole5-4 {
+  animation-name: delayShow;
+  animation-duration: 500ms;
+  animation-delay: 6.5s;
+}
+
+
+
+
+
+
+
+
